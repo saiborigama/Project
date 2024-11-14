@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Our Chat Platform</h1>
+        <p>Please choose an option to proceed:</p>
+        <button onclick="goToCreateAccount()">Create an Account</button>
+        <button onclick="goToLogin()">Already Have an Account</button>
+    </div>
+    <script>
+
+    function goToCreateAccount() {
+        window.location.href = "index.html";  // Path to account creation page
+    }
+    function goToLogin() {
+        window.location.href = "login.html"; 
+    }
+    function validateLogin() {
+        const websiteName = document.getElementById("websiteName").value;
+        const password = document.getElementById("password").value;
+        if (websiteName && password) {
+            return true; // Allow form submission
+        } else {
+            alert("Please fill in all fields.");
+            return false; // Prevent form submission
+        }
+    }
+
+    </script>
+</body>
+</html>

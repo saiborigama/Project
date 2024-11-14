@@ -1,0 +1,163 @@
+/* General Reset and Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(to right, #fffefe, #f4f2f0); /* Warm gradient background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+
+/* Container Styling */
+.container {
+  text-align: center;
+  background: rgba(1, 50, 57, 0.2);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(3, 53, 80, 0.3);
+  max-width: 400px;
+  width: 100%;
+}
+
+h1 {
+  color: #c61e1e;
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Dynamic Website Name Styling */
+#dynamicWebsiteName {
+  color: #0f0f0b;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/* Form Styling */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #f0f0f0;
+  display: block;
+  margin-bottom: 8px;
+}
+
+input[type="password"] {
+  padding: 12px 15px;
+  width: 100%;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: rgba(255, 255, 255, 0.7);
+  margin-top: 5px;
+  transition: all 0.3s ease;
+}
+
+input[type="password"]:focus {
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 2px solid #ffeb3b;  /* Adds a border on focus */
+}
+
+/* Button Styling */
+button {
+  padding: 12px 25px;
+  margin-top: 15px;
+  background-color: #000000; /* Green button */
+  border: none;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #17c720;
+}
+
+button:active {
+  background-color: #388e3c;
+}
+
+/* Chat Styling */
+.chat-container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.chat-header {
+  background-color: #05823d;
+  padding: 10px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.chat-box {
+  background-color: white;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-message {
+  margin-bottom: 10px;
+  padding: 8px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  word-wrap: break-word;
+}
+
+.chat-input-area {
+  display: flex;
+  margin-top: 10px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 14px;
+  margin-right: 10px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+}
+
+.chat-input-area button {
+  background-color: #4caf50;
+  padding: 10px 15px;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input-area button:hover {
+  background-color: #45a049;
+}
+
+.chat-input-area button:active {
+  background-color: #388e3c;
+}

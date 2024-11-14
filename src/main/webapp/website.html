@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Login</title>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+  <form action="Website">
+  <div class="container">
+    <h1> <span id="dynamicWebsiteName"></span></h1>
+    <div class="form-group">
+      <label for="inputPassword">Enter Password:</label>
+      <input type="password" id="inputPassword" placeholder="Enter password">
+    </div>
+    <input type="submit">
+    <button onclick="validatePassword()">Submit</button>
+  </div>
+</form>
+  <script>
+    // Get the website name from the URL parameter and display it dynamically
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const websiteName = urlParams.get('name');
+    
+    document.getElementById('dynamicWebsiteName').textContent = websiteName;
+
+    // Validate the password
+    function validatePassword() {
+      const enteredPassword = document.getElementById('inputPassword').value;
+      const savedPassword = localStorage.getItem('websitePassword');  // Retrieve saved password from localStorage
+
+      if (enteredPassword === savedPassword) {
+        // Redirect to chat.html and pass the website name in the URL
+        window.location.href = `chat.html?name=${websiteName}`;
+      } else {
+        alert("Incorrect password. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>
