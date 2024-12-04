@@ -7,7 +7,7 @@
   
   body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(to right, #0b0215, #eeebed);
+    background: linear-gradient(to right, #000000, #360024);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,10 +18,10 @@
   /* Container Styling */
   .container {
     text-align: center;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(11, 94, 239, 0.2);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(255, 9, 9, 0.3);
     max-width: 400px;
     width: 100%;
   }
@@ -165,5 +165,14 @@
   
   .blue-screen {
     animation: fadeIn 1s ease-in-out;
+  }
+  #s
+  {
+    background-color: rgb(27, 27, 84);
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    color: rgb(255, 255, 255);
+
   }
   
